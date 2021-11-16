@@ -1,9 +1,24 @@
 {
   "name": "async-math",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Async math functions.",
   "main": "src/lib/index.js",
   "types": "src/types/index.d.ts",
   "author": "M4THEWS",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/M4THEWS2/Async-Math.git"
+  },
+  "keywords": [
+    "node",
+    "npm",
+    "math",
+    "async",
+    "js"
+  ],
+  "bugs": {
+    "url": "https://github.com/M4THEWS2/Async-Math/issues"
+  },
+  "homepage": "https://github.com/M4THEWS2/Async-Math#readme"
 }

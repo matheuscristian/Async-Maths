@@ -1,0 +1,9 @@
+{
+  "name": "async-math",
+  "version": "1.0.0",
+  "description": "Async math functions.",
+  "main": "src/lib/index.js",
+  "types": "src/types/index.d.ts",
+  "author": "M4THEWS",
+  "license": "MIT"
+}

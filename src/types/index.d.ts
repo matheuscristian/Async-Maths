@@ -8,7 +8,7 @@ declare module 'async-math' {
         ---
         @param delay Delay to return the result
     **/
-    export async function asyncSum(a: number, b: number, delay?: number): Promise<number>;
+    export async function sum(a: number, b: number, delay?: number): Promise<number>;
 
     /**
         - Multiplies two numbers.
@@ -16,7 +16,7 @@ declare module 'async-math' {
         ---
         @param delay Delay to return the result
     **/
-    export async function asyncMul(a: number, b: number, delay?: number): Promise<number>;
+    export async function mul(a: number, b: number, delay?: number): Promise<number>;
 
     /**
         - Divide two numbers.
@@ -24,7 +24,7 @@ declare module 'async-math' {
         ---
         @param delay Delay to return the result
     **/
-    export async function asyncDiv(a: number, b: number, delay?: number): Promise<number>;
+    export async function div(a: number, b: number, delay?: number): Promise<number>;
 
     /**
         - Subtract two numbers.
@@ -32,7 +32,7 @@ declare module 'async-math' {
         ---
         @param delay Delay to return the result
     **/
-    export async function asyncSub(a: number, b: number, delay?: number): Promise<number>;
+    export async function sub(a: number, b: number, delay?: number): Promise<number>;
 
     /**
         - Potentiate two numbers.
@@ -40,7 +40,7 @@ declare module 'async-math' {
         ---
         @param delay Delay to return the result
     **/
-    export async function asyncPot(a: number, b: number, delay?: number): Promise<number>;
+    export async function pot(a: number, b: number, delay?: number): Promise<number>;
 
     /**
         - Return the square root of the number.
@@ -48,7 +48,7 @@ declare module 'async-math' {
         ---
         @param delay Delay to return the result
     **/
-    export async function asyncSqr(a: number, delay?: number): Promise<number>;
+    export async function sqr(a: number, delay?: number): Promise<number>;
 
     /**
      * A class that contains the data of the maths operations.

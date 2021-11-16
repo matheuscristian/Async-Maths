@@ -1,5 +1,5 @@
 class asyncMath {
-    static async asyncSum(a, b, delay = 0) {
+    static async sum(a, b, delay = 0) {
         let s = a + b;
 
         return new Promise((resolve) => {
@@ -9,7 +9,7 @@ class asyncMath {
         });
     }
 
-    static async asyncMul(a, b, delay = 0) {
+    static async mul(a, b, delay = 0) {
         let s = a * b;
 
         return new Promise((resolve) => {
@@ -19,7 +19,7 @@ class asyncMath {
         });
     }
 
-    static async asyncDiv(a, b, delay = 0) {
+    static async div(a, b, delay = 0) {
         let s = a / b;
 
         return new Promise((resolve) => {
@@ -29,7 +29,7 @@ class asyncMath {
         });
     }
 
-    static async asyncSub(a, b, delay = 0) {
+    static async sub(a, b, delay = 0) {
         let s = a - b;
 
         return new Promise((resolve) => {
@@ -39,7 +39,7 @@ class asyncMath {
         });
     }
 
-    static async asyncPot(a, b, delay = 0) {
+    static async pot(a, b, delay = 0) {
         let s = a;
 
         for (let i = 1; i < b; i++) {
@@ -53,7 +53,7 @@ class asyncMath {
         });
     }
 
-    static async asyncSqr(a, delay = 0) {
+    static async sqr(a, delay = 0) {
         let s = Math.sqrt(a);
 
         return new Promise((resolve) => {
@@ -93,7 +93,7 @@ class asyncMath {
                 }, delay * 1000);
             });
         } else if (types.pot.indexOf(type) >= 0) {
-            let s = await this.asyncPot(a, b, 0);
+            let s = await this.pot(a, b, 0);
             return new Promise((resolve) => {
                 setTimeout(() => {
                     resolve(s);

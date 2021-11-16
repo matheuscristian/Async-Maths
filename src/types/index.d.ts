@@ -1,7 +1,7 @@
 /** 
     Module that contains Async Math functions to help you.
 **/
-declare module 'async-math' {
+declare module 'async-maths' {
     /**
         - Sum two numbers.
         You can set a delay, the result will be returned after delay.

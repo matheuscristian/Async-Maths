@@ -1,4 +1,4 @@
-class asyncMath {
+class asyncMaths {
     static async sum(a, b, delay = 0) {
         let s = a + b;
 
@@ -115,4 +115,4 @@ class asyncMath {
     }
 }
 
-module.exports = asyncMath;
+module.exports = asyncMaths;

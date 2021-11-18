@@ -81,7 +81,7 @@ declare module 'async-maths' {
     };
 
     /**
-     * ### Do a operation according to the type
+     * #### Do a operation according to the type
      *
      * @param a The first Number
      * @param b The second Number
@@ -91,11 +91,19 @@ declare module 'async-maths' {
      */
     export async function doOperation(a: number, b: number, delay: number, type: string, types?: mathType): Promise<number>;
     /** 
-     * ### Do a operation according to the type
+     * #### Do a operation according to the type
      * 
      * @param a The first Number
      * @param b The second Number
      * @param type Type to operate
      */
     export async function doOperation(a: number, b: number, type: string): Promise<number>;
+
+    /**
+     * #### Gives a random number between the 0 and max value. 
+     * 
+     * @param max The max number.
+     * @param delay Delay to return the number
+     */
+    export async function getRandom(max:number, delay:number);
 }

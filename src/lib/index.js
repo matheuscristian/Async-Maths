@@ -64,10 +64,10 @@ class asyncMaths {
     }
 
     static async doOperation(a, b, delay, type, types = new this.mathType()) {
-        if (typeof(delay) == "string") {
+        if (typeof (delay) == "string") {
             type = delay;
         }
-        
+
         if (types.sum.indexOf(type) >= 0) {
             return new Promise((resolve) => {
                 setTimeout(() => {
@@ -106,12 +106,20 @@ class asyncMaths {
 
     static mathType = class {
         constructor() {
-            this.sum = ["+", "a"];
+            this.sum = ["a", "+"];
             this.mul = ["m", "*"];
             this.div = ["d", "/"];
             this.sub = ["s", "-"];
             this.pot = ["p", "^"];
         }
+    }
+
+    static async getRandom (max, delay) {
+        let r = Math.floor(Math.random() * max);
+
+        return new Promise ((resolve) => {
+            setTimeout(() => resolve(r), delay * 1000);
+        });
     }
 }
 
